@@ -1,0 +1,272 @@
+* {
+	box-sizing: border-box;
+}
+
+#logo {
+	max-width: 100%;
+}
+
+header {
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+}
+
+nav {
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+}
+
+body {
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic,
+		"AppleGothic", sans-serif;
+	font-variant: small-caps;
+	color: black;
+	font-size: 16px;
+}
+
+[class*="col-"] {
+	float: left;
+	padding: 10px;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+[class*="col-"] {
+	width: 100%;
+}
+
+@media only screen and (min-width: 550px) {
+	.col-m-1 {
+		width: 8.33%;
+	}
+	.col-m-2 {
+		width: 16.66%;
+	}
+	.col-m-3 {
+		width: 25%;
+	}
+	.col-m-4 {
+		width: 33.33%;
+	}
+	.col-m-5 {
+		width: 41.66%;
+	}
+	.col-m-6 {
+		width: 50%;
+	}
+	.col-m-7 {
+		width: 58.33%;
+	}
+	.col-m-8 {
+		width: 66.66%;
+	}
+	.col-m-9 {
+		width: 75%;
+	}
+	.col-m-10 {
+		width: 83.33%;
+	}
+	.col-m-11 {
+		width: 91.66%;
+	}
+	.col-m-12 {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.col-1 {
+		width: 8.33%;
+	}
+	.col-2 {
+		width: 16.66%;
+	}
+	.col-3 {
+		width: 25%;
+	}
+	.col-4 {
+		width: 33.33%;
+	}
+	.col-5 {
+		width: 41.66%;
+	}
+	.col-6 {
+		width: 50%;
+	}
+	.col-7 {
+		width: 58.33%;
+	}
+	.col-8 {
+		width: 66.66%;
+	}
+	.col-9 {
+		width: 75%;
+	}
+	.col-10 {
+		width: 83.33%;
+	}
+	.col-11 {
+		width: 91.66%;
+	}
+	.col-12 {
+		width: 100%;
+	}
+}
+
+/*Homepage:*/
+.col-m-4 {
+	position: relative;
+}
+
+.img-product {
+	max-height: 300px;
+}
+
+.col-m-4.product {
+	overflow: auto;
+	clear:both;
+	min-height: inherit;
+}
+
+/* SignIn */
+.col-m-6.form-label {
+	text-decoration: none;
+	align-content: center;
+	margin-top:10px;
+	text-align: center;
+}
+
+.col-m-6.form-ctrl {
+	border: 1px solid gray;
+	padding: 10px;
+	margin-top:10px;
+	clear: right;
+}
+
+.col-m-12.form-ctrl {
+	text-decoration: none;
+	align-content: center;
+	text-align: center;
+	content: "";
+	clear: both;
+	border: 1px solid gray;
+	margin-top:10px;
+	padding: 10px;
+}
+
+.col-m-12.login {
+	margin: auto;
+	align-content: center;
+}
+
+form p
+{font-style: italic;
+background-color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0.6);
+border-radius: 5px;
+margin-top: 5px;}
+form span
+{background-color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0.6);
+border-radius: 5px;
+
+}
+
+input { border-radius: 5px;
+margin: 2px 0 8px 0;
+padding: 4px;
+resize: none;
+box-shadow: 2px 2px 4px #a296cf;
+border: solid #d1cbe7 1px;
+ }
+
+
+
+input[type=submit]
+{background-color: #a296cf;
+border: solid #a296cf 1px;
+color:white;
+font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+font-variant: small-caps;
+width: 100%;
+padding: 5px;
+margin-top: -10px;
+box-shadow: 2px 5px 4px #8473bf;
+font-size: 20px;
+cursor: pointer;}
+
+input:focus, select:focus, textarea:focus  {
+-webkit-transition: 0.5s;
+transition: 0.5s;
+outline: none;
+border: solid #8473bf 1px;
+}
+
+.readonly {color: grey; }
+input[type=text]:disabled {
+    background: white;
+}
+
+select {
+margin-bottom: 8px;
+border-radius: 5px;
+box-shadow: 2px 2px 4px #a296cf;
+border: solid #d1cbe7 1px;
+box-shadow: 2px 2px 4px #a296cf;
+font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+font-variant: small-caps; }
+
+textarea {
+border-radius: 5px;
+width: 100%;
+height: 100px;
+resize: none;
+margin-top: 3px;
+margin-bottom: 5px;
+border: solid #d1cbe7 0.5px;
+box-shadow: 2px 2px 4px #a296cf; }
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border: solid #a296cf;
+	width: 18px;
+	background-color: #a296cf;
+	height: 18px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	color: white;
+	font-weight: bold;
+
+}
+
+ .tooltiptext {
+    visibility: hidden;
+    width: 250px;
+    background-color: #a296cf;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+
+    position: absolute;
+	 z-index: 1;
+    left: 40px;
+	top: 2px;
+	opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+visibility: visible;
+opacity: 1;}
+
+.tooltip:hover .tooltiptext {
+visibility: visible;}
